@@ -1,0 +1,31 @@
+#include <iostream> 
+using namespace std; 
+int main () 
+{ 
+
+ float harga,diskon,total_harga,uang,kembalian; 
+ cout << "SELAMAT DATANG DI ZIRI" << endl;
+
+ cout<<"Masukkan Harga Barang :"; 
+ cin>>harga; 
+ 
+ if (harga >=500000) 
+ { 
+  diskon=harga*10/100; 
+  cout<<"Diskon = "<<diskon<<endl; 
+ } 
+ 
+ else if (harga <=500000) 
+ { 
+  diskon=harga*0/100; 
+  cout<<"Diskon = "<<diskon<<endl; 
+ } 
+ 
+ total_harga= harga-diskon; 
+ cout<<"Total Harga = "<<total_harga<<endl; 
+ cout<<"Input Jumlah Uang = "; 
+ cin>>uang; 
+ kembalian=uang-total_harga; 
+ cout<<"Kembalian = "<<kembalian<<endl; 
+ return 0; 
+}
